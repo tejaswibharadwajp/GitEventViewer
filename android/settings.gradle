@@ -1,0 +1,3 @@
+rootProject.name = 'GitEventViewer'
+
+include ':app'
