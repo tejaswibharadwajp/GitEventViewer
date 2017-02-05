@@ -15,7 +15,7 @@ export default class GitFeed extends Component {
         let ds = new ListView.DataSource({
             rowHasChanged : (r1, r2)=> r1!==r2
         });
-      this.state={dataSource:ds.cloneWithRows(['A', 'B','C'])};
+      this.state={dataSource:''};
 
     }
     renderRow(rowData){
@@ -31,11 +31,12 @@ export default class GitFeed extends Component {
         console.log("Inside get Git Feed");
         // require('../Services/AuthenticationService').gitAuthService()
         fetch('https://api.github.com/users/tejaswibharadwajp/events')
-            .then((response)=> { console.log(response);
-            //let eventType=response.filter((ev)=>ev.type=='PushEvent');
-           // console.log(eventType);
-        //this.setState({dataSource: this.state.dataSource.cloneWithRows([eventType])})
-        })
+            .then((response)=>response.json())
+            .then((responseInJSON)=>{let eventType=responseInJSON.filter((ev)=>ev.type==="PushEvent");
+           console.log(JSON.stringify(eventType));
+                let ds = new ListView.DataSource({
+                    rowHasChanged : (r1, r2)=> r1!==r2});
+        this.setState({dataSource:ds.cloneWithRows[JSON.stringify(eventType)]})})
          .catch((err)=>{
             console.log(err);
 
