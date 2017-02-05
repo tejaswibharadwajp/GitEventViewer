@@ -13,9 +13,9 @@ export default class GitFeed extends Component {
         super(props);
 
         let ds = new ListView.DataSource({
-            rowHasChanged : (r1, r2)=> r1!=r2
+            rowHasChanged : (r1, r2)=> r1!==r2
         });
-      this.state={dataSource:ds.cloneWithRows['A','B']};
+      this.state={dataSource:ds.cloneWithRows(['A', 'B','C'])};
 
     }
     renderRow(rowData){
@@ -23,33 +23,50 @@ export default class GitFeed extends Component {
             {rowData}
         </Text>);
     }
-    /*componentDidMount(){*/
-    //     this.getGitFeed();
-    // }
-    // getGitFeed(){
-    //     // require('../Services/AuthenticationService').gitAuthService()
-    //     fetch('https://api.github.com/users/tejaswibharadwajp/events')
-    //         .then((response)=> { console.log(response);//let eventType=response.filter((ev)=>ev.type=='PushEvent');
-    //        // console.log(eventType);
-    //     //this.setState({dataSource: this.state.dataSource.cloneWithRows([eventType])})
-    //     })
-    //      .catch((err)=>{
-    //         console.log(err);
-    //
-    //     });
-    // }
+    componentDidMount(){
+        console.log("Inside Component Did Mount");
+        this.getGitFeed();
+    }
+    getGitFeed(){
+        console.log("Inside get Git Feed");
+        // require('../Services/AuthenticationService').gitAuthService()
+        fetch('https://api.github.com/users/tejaswibharadwajp/events')
+            .then((response)=> { console.log(response);
+            //let eventType=response.filter((ev)=>ev.type=='PushEvent');
+           // console.log(eventType);
+        //this.setState({dataSource: this.state.dataSource.cloneWithRows([eventType])})
+        })
+         .catch((err)=>{
+            console.log(err);
+
+        });
+    }
     render() {
-        return(
-            <View style={styles.container}>
-            <ListView
-            dataSource={this.state.dataSource}
-            renderRow={this.renderRow.bind(this)}
-            >
 
-            </ListView>
-            </View>
+            if(this.state.dataSource==''){
+                return(
+                    <View>
+                        <Text>Loading...</Text>
 
-        )
+                    </View>
+                )
+            }
+            else{
+                return(
+                    <View style={styles.container}>
+                        <ListView
+                            dataSource={this.state.dataSource}
+                            renderRow={this.renderRow.bind(this)}
+                        >
+
+                        </ListView>
+                    </View>
+
+                )
+
+            }
+
+
     }
 
 

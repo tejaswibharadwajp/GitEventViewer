@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53ac853d-b05f-4c2d-9604-938cd222241f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/feed.imageset/feed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/repo.imageset/repo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Components/GitFeed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/Image.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/feed.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/repo.imageset/Contents.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/GitEventViewer.xcodeproj/project.xcworkspace/xcuserdata/iPhani.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ios/GitEventViewer.xcodeproj/project.xcworkspace/xcuserdata/iPhani.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/HomePage.js" afterPath="$PROJECT_DIR$/Components/HomePage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.ios.js" afterPath="$PROJECT_DIR$/index.ios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/Git-Mark.imageset/Contents.json" afterPath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/Git-Mark.imageset/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/fork.imageset/Contents.json" afterPath="$PROJECT_DIR$/ios/GitEventViewer/Images.xcassets/fork.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Components/GitFeed.js" afterPath="$PROJECT_DIR$/Components/GitFeed.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,7 +25,7 @@
       <file leaf-file-name="index.ios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.ios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="495">
               <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
               <folding>
                 <element signature="e#1#40#0" expanded="true" />
@@ -46,7 +37,7 @@
       <file leaf-file-name="HomePage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Components/HomePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="390">
               <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -55,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GitFeed.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GitFeed.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Components/GitFeed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+            <state relative-caret-position="107">
+              <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -77,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticationService.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthenticationService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Services/AuthenticationService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="450">
+              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding>
                 <element signature="e#2#41#0" expanded="true" />
               </folding>
@@ -111,12 +102,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GitLogin.js" />
-        <option value="$PROJECT_DIR$/Services/AuthenticationService.js" />
         <option value="$PROJECT_DIR$/Components/GitLogin.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.ios.js" />
         <option value="$PROJECT_DIR$/index.android.js" />
         <option value="$PROJECT_DIR$/Components/HomePage.js" />
+        <option value="$PROJECT_DIR$/Services/AuthenticationService.js" />
         <option value="$PROJECT_DIR$/Components/GitFeed.js" />
       </list>
     </option>
@@ -253,8 +244,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,6 +255,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -359,7 +351,8 @@
       <workItem from="1486104212036" duration="27000" />
       <workItem from="1486104298704" duration="11347000" />
       <workItem from="1486160942801" duration="676000" />
-      <workItem from="1486276395331" duration="1203000" />
+      <workItem from="1486276395331" duration="4438000" />
+      <workItem from="1486283942242" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="Removed Node Modules">
       <created>1486105158233</created>
@@ -368,17 +361,24 @@
       <option name="project" value="LOCAL" />
       <updated>1486105158233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Tabs and HomePage">
+      <created>1486278714716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486278714716</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54706000" />
+    <option name="totallyTimeSpent" value="58257000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23510723" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23431295" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -405,7 +405,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed Node Modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Node Modules" />
+    <MESSAGE value="Added Tabs and HomePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Tabs and HomePage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -747,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.ios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="495">
           <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding>
             <element signature="e#1#40#0" expanded="true" />
@@ -757,18 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Components/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="390">
           <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Components/GitFeed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -785,10 +776,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Services/AuthenticationService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding>
             <element signature="e#2#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Components/GitFeed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="33" column="53" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
