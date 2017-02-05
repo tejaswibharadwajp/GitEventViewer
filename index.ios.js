@@ -1,8 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
 
 import React, {Component} from 'react';
 import {
@@ -12,6 +7,7 @@ import {
   View
 } from 'react-native';
 import GitLogin from './Components/GitLogin'
+import HomePage from './Components/HomePage';
 
 export default class GitEventViewer extends Component {
     constructor(props){
@@ -22,8 +18,8 @@ export default class GitEventViewer extends Component {
       console.log("Render indexJS "+this.state.login);
       if(this.state.login){
           return(
-              <View><Text style={styles.container}>Logged In!!!!</Text></View>
-          );
+            <HomePage/>
+                  );
       }
       else{
           return(
